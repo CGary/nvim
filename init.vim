@@ -17,20 +17,17 @@ set expandtab
 set shiftwidth=2
 set tabstop=2
 
-"filetype plugin indent on
-" syntax on
-
-" set t_Co=256
-
-" True color if available
-" let term_program=$TERM_PROGRAM
-
+filetype plugin indent on
+syntax on
 
 call plug#begin('~/.config/nvim/plugged')
-    " Appearance
-    Plug 'vim-airline/vim-airline'
+  " Appearance
+  Plug 'vim-airline/vim-airline'
 
-    " Git
-    Plug 'airblade/vim-gitgutter'
+  " Utilities
+  Plug 'preservim/nerdtree'
+
+  " Git
+  Plug 'airblade/vim-gitgutter'
 call plug#end()
 
